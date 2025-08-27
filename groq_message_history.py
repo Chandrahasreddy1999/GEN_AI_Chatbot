@@ -27,7 +27,7 @@ api_key=st.text_input("Enter your NVIDIA API key:",type="password")
 ## check if groq api key is provided
 if api_key:
     llm = ChatNVIDIA(
-    model="qwen/qwen2.5-coder-32b-instruct",
+    model="meta/llama-3.3-70b-instruct",
     api_key=api_key,
     temperature=0.2,
     top_p=0.7,
